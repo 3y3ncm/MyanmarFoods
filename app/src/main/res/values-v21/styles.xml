@@ -2,4 +2,8 @@
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light">
     </style>
+
+    <!--<style name="AppTheme" parent="android:Theme.Material">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
 </resources>

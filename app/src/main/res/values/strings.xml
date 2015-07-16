@@ -3,4 +3,8 @@
 
     <string name="hello_world">Welcome to Myanmar Foods App</string>
     <string name="action_settings">Settings</string>
+    <string name="changeLayout_btn">Go To Next Layout</string>
+    <string name="title_activity_welcome">Welcome to Food</string>
+    <string name="message">Welcome</string>
+
 </resources>

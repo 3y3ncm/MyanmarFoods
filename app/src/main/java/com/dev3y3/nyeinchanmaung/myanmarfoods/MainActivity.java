@@ -1,18 +1,32 @@
 package com.dev3y3.nyeinchanmaung.myanmarfoods;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 
 public class MainActivity extends Activity {
-
+    public final static String EXTRA_MESSAGE="com.dev3y3.nyeinchanmaung.myanmarfoods.message";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    public void sendMessage (View view){
+        Intent intent=new Intent(this,WelcomeActivity.class);
+        EditText editText= (EditText)findViewById(R.id.editText);
+        String message=editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,message);
+        startActivity(intent);
+
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
